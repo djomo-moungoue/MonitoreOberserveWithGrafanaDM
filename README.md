@@ -7,3 +7,44 @@ La surveillance des systèmes informatiques est une pratique aussi ancienne que 
 ## Observabilité (Observability)
 L’observabilité élargit la portée et la visibilité des outils de surveillance traditionnels, en incorporant des données situationnelles et historiques supplémentaires et des interactions entre les systèmes. Elle permet de rechercher la cause racine des alertes de surveillance et d’étudier les problèmes liés aux interactions entre plusieurs composants.
 [[source: the-difference-between-monitoring-and-observabilit]](https://aws.amazon.com/fr/compare/the-difference-between-monitoring-and-observability)
+
+# Fonctionalités de Grafana
+
+# Installer Grafana
+
+~~~ps1
+winget search grafana
+
+# Name              Id                             Version  Match        Source
+# -----------------------------------------------------------------------------
+# GrafanaEnterprise GrafanaLabs.Grafana.Enterprise 10.3.3.0 Tag: grafana winget
+# GrafanaOSS        GrafanaLabs.Grafana.OSS        10.3.4.0 Tag: grafana winget
+
+winget install --id GrafanaLabs.Grafana.Enterprise --exact --source winget --silent
+# RootDir: C:\Program Files\GrafanaLabs\grafana
+# ConfDir: ..\conf
+# BinDir: ..\bin # grafana.exe, grafana-cli.exe, grafana-server.exe
+# DataDir: ..\data
+~~~
+
+## Configurer
+
+~~~ps1
+# RootDir: C:\Program Files\GrafanaLabs\grafana
+# ConfDir: ..\conf
+
+# Edit defaults.ini
+# The ip address to bind to, empty will bind to all interfaces
+http_addr = localhost
+
+# The http port to use
+http_port = 3000
+~~~
+
+## Se Connecter
+
+http://localhost:3000/login
+username: admin
+password: admin (default reset after the first login)
+
+
