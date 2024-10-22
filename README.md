@@ -43,8 +43,10 @@ http_port = 3000
 
 ## Se Connecter
 
+~~~ps1
 http://localhost:3000/login
 username: admin
 password: admin (default reset after the first login)
+~~~
 
 
