@@ -10,7 +10,7 @@ L’observabilité élargit la portée et la visibilité des outils de surveilla
 
 # Fonctionalités de Grafana
 
-# Installer Grafana
+# Installer Grafana sur Windows OS
 
 ~~~ps1
 winget search grafana
@@ -46,7 +46,9 @@ http_port = 3000
 ~~~ps1
 http://localhost:3000/login
 username: admin
-password: admin (default reset after the first login)
+password: admin (default to reset after the first login)
 ~~~
+
+# Administrer grafana
 
 
