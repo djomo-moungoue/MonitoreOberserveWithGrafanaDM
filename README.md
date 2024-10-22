@@ -21,6 +21,7 @@ winget search grafana
 # GrafanaOSS        GrafanaLabs.Grafana.OSS        10.3.4.0 Tag: grafana winget
 
 winget install --id GrafanaLabs.Grafana.Enterprise --exact --source winget --silent
+
 # RootDir: C:\Program Files\GrafanaLabs\grafana
 # ConfDir: ..\conf
 # BinDir: ..\bin # grafana.exe, grafana-cli.exe, grafana-server.exe
